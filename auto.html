@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Profile Generator</title>
+ <link rel="stylesheet" href="auto.css">
+</head>
+<body>
+  <h2>Profile Generator</h2>
+  <form id="profileForm">
+    <input type="text" placeholder="Full Name" id="name" required><br><br>
+    <input type="email" placeholder="Email" id="email" required><br><br>
+    <input type="text" placeholder="Skills (comma separated)" id="skills"><br><br>
+    <input type="file" id="photo" accept="image/*" required><br><br>
+    <input type="file" id="resume" accept=".pdf" required><br><br>
+    <button type="submit">Generate Profile</button>
+  </form>
+
+  <br><hr><br>
+
+  <div class="card hidden" id="profileCard">
+    <img id="profilePic" src="" alt="User Photo"><br><br>
+    <p><strong>Name:</strong> <span id="showName"></span></p>
+    <p><strong>Email:</strong> <span id="showEmail"></span></p>
+    <p><strong>Skills:</strong> <span id="showSkills"></span></p>
+    <p><strong>Resume:</strong> <a id="resumeLink" href="#" download>Download</a></p>
+  </div>
+
+  <script src="auto.js"></script>
+</body>
+</html>
